@@ -496,6 +496,11 @@ footer {
 
 @media screen and (max-width: 1020px) {
     
+    @media (max-width: 80em) {
+
+    
+
+
     .fixed-text {
         width: 300%;
         position: absolute;
@@ -594,6 +599,10 @@ footer {
         width: 240px;
     }
 
+    button:hover {
+        width: 240px;
+    }
+
     .main-text h2 {
         font-size: 40px;
     }
@@ -611,5 +620,7 @@ footer {
 }
     
 
+
+}
 
 }
