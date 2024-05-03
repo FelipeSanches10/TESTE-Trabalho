@@ -173,7 +173,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-width: 200px;
+    min-width: 230px;
     max-height: 330px;
     min-height: 150px;
     text-align: center;
@@ -184,28 +184,31 @@ img {
     transition: all 0.8s;
     border: 1px solid rgb(53, 53, 53);
     cursor: pointer;
+    width: 10%;
    
 }
 
 
 .box:hover {
     transform: scale(1.04);
-    border: 1px solid rgb(58, 58, 58);
+    border: 1px solid rgb(51, 51, 51);
     
 }
 
 .box img {
     width: 35%;
     position: absolute;
-    padding-bottom: 40%;
+    padding-bottom: 65%;
     background-position: fixed;
 }
 
 .box h3 {
     text-align: center;
-    color: #8b8a8a;
-    padding-top: 24%;
+    color: #a3a3a3;
+    padding-top: 55%;
     width: 150%;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -224,14 +227,29 @@ img {
     justify-content: center;
     min-width: 230px;
     max-height: 330px;
-    min-height: 270px;
+    min-height: 320px;
     text-align: center;
     font-size: 18px;
     background-color: #000000;
     padding: 35px 45px;
     border-radius: 10px;
-    transition: all 0.8s;
-    
+    transition: all 1.2s;
+    width: 10%;
+}
+
+.box p {
+    text-align: center;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 0.7s;
+    color: #8d8d8d;
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box:hover p {
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 .stages {
