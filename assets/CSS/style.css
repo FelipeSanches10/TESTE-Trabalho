@@ -36,6 +36,7 @@ header {
     font-family: "Indie Flower", cursive;
 }
 
+
 .logo-ios {
     color: #aa87d8;
     font-family: "Indie Flower", cursive;
@@ -62,8 +63,10 @@ header {
 }
 
 .navList li a:hover {
+    transition-duration: 0.5s;
     color: #ffffff;
 }
+
 
 img {
     width: 100%;
@@ -77,6 +80,9 @@ img {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    scroll-snap-align: start;
+    position: sticky;
+
 }
 
 
@@ -90,6 +96,12 @@ img {
 
 .welcome span {
     font-size: 4px;
+}
+
+.page {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow: scroll;
 }
 
 .home-text h1 {
@@ -165,6 +177,8 @@ img {
     justify-content: center;
     gap: 50px;
     padding: 5% 0 0;
+    scroll-snap-align: start;
+    position: sticky;
 }
 
 .box {
@@ -276,7 +290,7 @@ img {
     font-family: "Poppins", sans-serif;
     margin: 10px 0 0;
     color: white;
-    gap: 56px;
+    
 }
 
 .titleh2 h2 {
@@ -288,10 +302,12 @@ img {
 }
 
 .about-text img {
-    width: 60%;
-    height: 425px;
-    padding-left: 60px;
+    width: 68%;
+    height: 460px;
+    
+
 }
+
 
 .about-text span {
     font-size: 24px;
@@ -329,9 +345,8 @@ hr {
 
 .big-text {
     background-color: #000000;
-    padding-top: 30%;
+    padding-top: 40%;
 }
-
 
 
 
