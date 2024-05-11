@@ -10,12 +10,16 @@ body {
     font-family: "Plus Jakarta Sans", sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(12, 12, 12);
 
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 header {
-    background-color: rgb(11, 11, 12);
+    background-color: rgb(10, 10, 10);
     color: #fff;
     padding: 20px;
     display: flex;
@@ -25,7 +29,9 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    border:  1px solid rgb(53, 53, 53);
+    opacity: 1;
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .logo span {
@@ -104,24 +110,21 @@ img {
     overflow: scroll;
 }
 
-.home-text h1 {
-    font-size: 48px;
+.home-text h5 {
+    font-size: 38px;
     margin: 6px 0 0;
     font-family: "Plus Jakarta Sans", sans-serif;
-    color: #ffffff;
+    color: #919191;
     text-align: center;
     justify-content: center;
+    padding: 8px;
     
 }
 
 .p1 {
-    padding: 70px 0 0;
+    padding: 110px 0 0;
 }
 
-.home-text span {
-    font-size: 58px;
-     color: rgb(130 52 233);
-}
 
 .home-text p {
     margin: 6px 0 0;
@@ -130,7 +133,7 @@ img {
 }
 
 .image-header img {
-    width: 70%;
+    width: 60%;
     height: 40px;
     padding: 9%;
 } 
@@ -164,7 +167,7 @@ img {
 .main-text h4 {
     font-size: 40px;
     text-align: center;
-    padding: 14% 0 0;
+    padding: 25% 0 0;
     color: #eeeeee;
     font-weight: 400;
 }
@@ -207,10 +210,12 @@ img {
     transform: scale(1.04);
     border: 1px solid rgb(51, 51, 51);
     
+    
+    
 }
 
 .box img {
-    width: 35%;
+    width: 40%;
     position: absolute;
     padding-bottom: 65%;
     background-position: fixed;
@@ -219,7 +224,7 @@ img {
 .box h3 {
     text-align: center;
     color: #a3a3a3;
-    padding-top: 55%;
+    padding-top: 60%;
     width: 150%;
     font-size: 24px;
     font-family: Arial, Helvetica, sans-serif;
@@ -367,6 +372,7 @@ marquee {
     max-width: 200%;
     text-align: center;
     justify-content: center;
+    
   }
   
   .investments-course h2 {
@@ -443,88 +449,107 @@ button {
     border: 3px solid #742fce;
   }
 
-.main-text h2 {
-    text-align: center;
-    font-size: 52px;
-    color: #ffd6d6;
-}
 
-
-
-.content-social {
-    padding: 16%;
+.content-feed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    padding: 15%;
+    border: none;
     background: linear-gradient(rgb(26, 26, 26), black );
+}
 
+.content-feed h2 {
+    color: rgb(197, 197, 197); 
+    text-align: left;
+    padding-right: 12%;
+    font-size: 42px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
-.contact {
-    display: inline-block; 
-    padding: 10px;
-    transition: all 0.9s;
+.content-feed span {
+    position: relative;
+    background-color: #060606;
+    padding: 100px;
+    color: white;
+    width: 100%;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 18px;
+    border: 1px solid #003f31;
+}
+
+
+.content-feed textarea {
+    background-color: #a5a5a5;
+    border-radius: 10px;
+    padding: 14px;
+    width: 97%;
+    justify-content: center;
+    display: flex;
+    font-size: 26px;
+}
+
+
+.content-feed button {
+    border-radius: 10px;
+    width: 130px;
+    font-size: 24px;
+}
+
+.content-feed img {
+    width: 30px;
+}
+
+
+.footer-buttons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+    padding-bottom: 50px;
+    padding-right: 27px;
+    cursor: pointer;
     
 }
 
 
 
-.rounded1 img {
-    background-color: #343435;
-    border-radius: 100px;
-    width: 60px;
-    gap: 20px;
-    height: 60px;
-    padding: 5px;
-    margin-left: 31%;
+
+.footer-buttons img {
+    display: flex;
     justify-content: center;
-    display: flex;
     text-align: center;
-    transition: all 0.8s;
+    width: 50px;
+    background: radial-gradient(rgb(48, 48, 48), rgb(61, 61, 61));
+    border-radius: 18%;
+    
 }
 
-
-.rounded1 {
-    display: flex;
-    text-align: center;
-
-}
-
-
-.rounded2 img {
-    background-color: #343435;
-    border-radius: 100px;
-    width: 60px;
-    gap: 20px;
-    height: 60px;
-    padding: 5px;
-    margin-left: 31%;
-    justify-content: center;
-    display: flex;
-    text-align: center;
-    transition: all 0.8s;
-}
-
-
-.rounded2 {
-    display: flex;
-    text-align: center;
-
-}
 
 
 footer {
+    padding-top: 20%;
     letter-spacing: 1px;
     text-align: center;
-    padding: 20px 15%;
-    display: flex;
+    padding: 40px 35%;
+    display: block;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    text-align: center;
     gap: 2rem;
     font-weight: 500;
     background-color: #000000;
     color: #BDB5C9;
     border: 1px solid #1d1d1d;
-}
+} 
+
+
+
+
 
 
 @media screen and (max-width: 1020px) {
