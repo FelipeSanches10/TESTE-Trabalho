@@ -73,6 +73,23 @@ header {
     color: #ffffff;
 }
 
+.botton-acess {
+    opacity: 0.9;
+}
+
+.botton-acess a {
+    border: 1px solid #742fce;
+    background-color: #000000;
+    padding: 12px;
+    width: 10px;
+    border-radius: 10px;
+   
+}
+
+.botton-acess a:hover {
+    background-color: #001d17;
+}
+
 
 img {
     width: 100%;
