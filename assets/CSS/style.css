@@ -493,6 +493,10 @@ button {
     font-size: 26px;
 }
 
+::placeholder {
+    color: #424242;
+}
+
 
 .content-feed button {
     border-radius: 10px;
@@ -568,10 +572,24 @@ footer {
         height: 50px;
     }
 
+    .logo span {
+        justify-content: center;
+        display: flex;
+        padding-left: 20%;
+        text-align: center;
+    }
+
+    .navList li a {
+        text-align: center;
+        
+
+    }
+
     .home-text h1 {
         font-size: 36px;
         text-align: center;
     }
+
 
     .home-text span {
         font-size: 28px;
@@ -658,7 +676,7 @@ footer {
     }
 
     button:hover {
-        width: 240px;
+        width: 260px;
     }
 
     .main-text h2 {
@@ -674,6 +692,14 @@ footer {
         display: flex;
         justify-content: center;
         text-align: center;
+    }
+
+    .content-feed textarea {
+        width: 250px;
+    }
+
+    .content-feed button:hover {
+        width: 120px;
     }
 }
     
